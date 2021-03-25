@@ -1,0 +1,97 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    background: #e5e5e5;
+    color: #000;
+    margin: 0px auto;
+}
+
+.topo {
+    width: 100%;
+    height: 54px;
+    background: #FFF;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.topo>div {
+    width: 935px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+.topo-logo {
+    width: 150px;
+    height: 100%;
+    background: lightcoral;
+}
+
+.topo-pesquisa {
+    width: 150px;
+    height: 100%;
+    background: cyan;
+}
+
+.topo-menu {
+    width: 150px;
+    height: 100%;
+    background: yellow;
+}
+
+.container {
+    width: 935px;
+    height: calc(100vh - 54px);
+    background: lightpink;
+    display: flex;
+    justify-content: center;
+    margin-top: 88px;
+}
+
+.content {
+    width: 614px;
+    height: calc(100vh - 54px);
+    margin-right: 28px;
+}
+
+.stories-box {
+    width: 100%;
+    height: 84px;
+    background: lightgreen;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+    padding: 16px 0px;
+    border: 1px solid #dbdbdb
+}
+
+.feed {
+    width: 100%;
+    height: calc(100vh - 226px);
+    background: lightskyblue;
+}
+
+.post {
+    width: 100%;
+    height: 100px;
+    background: red;
+    border: 1px solid #dbdbdb;
+}
+
+.sidebar {
+    width: 293px;
+    height: 100%;
+    background: orange;
+}
+
+@media (max-width:935px) {
+    /* TABLET */
+}
+
+@media (max-width:614px) {
+    /* MOBILE */
+}
