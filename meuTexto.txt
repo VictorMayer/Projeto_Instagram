@@ -1,2 +1,0 @@
-Olá, Git!
-Git é muito Legal!
