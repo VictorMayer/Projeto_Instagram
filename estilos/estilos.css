@@ -10,6 +10,7 @@ body {
     background: #FAFAFA;
     color: #000;
     margin: 0px auto;
+    font-family: 'Roboto', sans-serif;
 }
 
 .topo {
@@ -116,6 +117,18 @@ body {
     border: 1px solid #dbdbdb;
     border-radius: 4px;
     overflow: hidden;
+    position: relative;
+}
+
+.setinha {
+    font-size: 28px;
+    color: white;
+    box-shadow: 0px 0px 0px gray;
+    border-radius: 100%;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    margin-right: 10px;
 }
 
 .stories-box>div {
@@ -130,7 +143,7 @@ body {
 .story-box {
     width: 74px;
     height: 90px;
-    margin-right: 7px;
+    margin-right: 6px;
     padding: 0px 4px;
     /* background: lightcoral; */
     display: flex;
@@ -162,6 +175,7 @@ body {
     margin-top: 7px;
     text-align: center;
     font-size: 12px;
+    color: #262626;
 }
 
 .feed {
@@ -195,6 +209,10 @@ body {
     width: calc(100% - 32px);
     height: 27px;
     border-radius: 4px 4px 0px 0px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #262626;
 }
 
 .post-top>span {
@@ -217,6 +235,10 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
 }
 
 .post-bottom-icons {
@@ -225,7 +247,7 @@ body {
     height: auto;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
 }
 
 .left-pack-icons>span {
@@ -236,6 +258,7 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin-left: 1px;
 }
 
 .curtidas img {
@@ -256,6 +279,17 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin-bottom: 7px;
+}
+
+.sidebar-top>span {
+    font-size: 14px;
+    color: #262626;
+}
+
+.sidebar-top>span p {
+    margin-top: 8px;
+    color: #8e8e8e;
 }
 
 .sidebar-top img {
@@ -268,6 +302,20 @@ body {
     display: flex;
     justify-content: space-between;
     margin-bottom: 11px;
+}
+
+.suggestions-header p:first-child {
+    color: #8e8e8e;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.suggestions-header p:last-child {
+    color: #262626;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 14px;
 }
 
 .suggestion {
@@ -291,15 +339,34 @@ body {
 }
 
 .suggestion-title p:first-child {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #262626;
+    line-height: 16px;
+    font-weight: 500;
+}
+
+.suggestion-title p:last-child {
     margin-bottom: 2px;
+    font-size: 12px;
+    color: #8e8e8e;
+    line-height: 14px;
+    font-weight: 400;
 }
 
 .suggestion>p {
-    color: #13e9f2
+    color: #139EF2;
+    font-size: 13px;
+    line-height: 14px;
+    font-weight: 500;
 }
 
 .sidebar-bottom {
     margin-top: 27px;
+    font-size: 11px;
+    line-height: 13px;
+    font-weight: 400;
+    color: #c7c7c7;
 }
 
 .sidebar-bottom p:nth-child(2) {
@@ -404,5 +471,8 @@ body {
         font-size: 24px;
         padding: 0px 20px;
         border-top: 1px solid #dbdbdb;
+    }
+    .setinha {
+        display: none;
     }
 }
