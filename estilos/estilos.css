@@ -115,6 +115,7 @@ body {
     padding: 16px 0px;
     border: 1px solid #dbdbdb;
     border-radius: 4px;
+    overflow: hidden;
 }
 
 .stories-box>div {
@@ -129,6 +130,7 @@ body {
 .story-box {
     width: 74px;
     height: 90px;
+    margin-right: 7px;
     padding: 0px 4px;
     /* background: lightcoral; */
     display: flex;
@@ -304,20 +306,41 @@ body {
     margin-top: 18px;
 }
 
+.barra-inferior {
+    display: none;
+}
+
 @media (max-width:935px) {
     /* TABLET */
     .sidebar {
         display: none;
     }
-    .topo {}
+    .topo>div {
+        width: 100vh;
+    }
+    .container {
+        width: auto;
+    }
+    .content {
+        margin-right: 0px;
+    }
 }
 
 @media (max-width:614px) {
     /* MOBILE */
+    .topo {
+        width: 100%;
+    }
+    .topo>div {
+        box-sizing: border-box;
+    }
     .topo-logo {
-        background: red;
-        width: 300px;
+        /* background: red; */
+        width: 325px;
         justify-content: space-between;
+    }
+    .topo>div {
+        width: 100%;
     }
     .separador-horizontal {
         display: none;
@@ -325,14 +348,61 @@ body {
     .topo-pesquisa {
         display: none;
     }
-    .topo-menu {
-        background: red;
-    }
     .topo-menu ion-icon {
         display: none;
         margin-right: 0px;
     }
     .topo-menu ion-icon:first-child {
         display: inline;
+    }
+    .content {
+        width: 100%;
+    }
+    .container {
+        width: 100%;
+        margin-top: 54px;
+    }
+    .stories-box {
+        margin-bottom: 0px;
+        border: none;
+        background: none;
+        box-sizing: border-box;
+        height: 121px;
+    }
+    .stories-box>div {
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .story {
+        border-radius: 100%;
+    }
+    .post {
+        box-sizing: border-box;
+        border-left: none;
+        border-right: none;
+        width: 100%;
+        border-radius: 0px;
+    }
+    .post>img {
+        width: 100%;
+    }
+    .post-top {
+        border-radius: 0px;
+    }
+    .post-bottom {
+        border-radius: 0px;
+    }
+    .barra-inferior {
+        display: inline;
+        box-sizing: border-box;
+        width: 100%;
+        height: 54px;
+        background: #ffffff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 24px;
+        padding: 0px 20px;
+        border-top: 1px solid #dbdbdb;
     }
 }
