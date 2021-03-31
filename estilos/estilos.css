@@ -403,7 +403,7 @@ body {
     }
     .topo-logo {
         /* background: red; */
-        width: 325px;
+        width: 54vw;
         justify-content: space-between;
     }
     .topo>div {
@@ -471,6 +471,9 @@ body {
         font-size: 24px;
         padding: 0px 20px;
         border-top: 1px solid #dbdbdb;
+        position: fixed;
+        bottom: 0;
+        right: 0;
     }
     .setinha {
         display: none;
